@@ -21,6 +21,8 @@
     --color-violet-200: oklch(0.894 0.057 293.283);
     --color-violet-800: oklch(0.432 0.232 292.759);
     --color-violet-900: oklch(0.38 0.189 293.745);
+    --color-purple-200: oklch(0.902 0.063 306.703);
+    --color-purple-300: oklch(0.827 0.119 306.383);
     --color-purple-600: oklch(0.558 0.288 302.321);
     --color-slate-300: oklch(0.869 0.022 252.894);
     --color-gray-100: oklch(0.967 0.003 264.542);
@@ -245,9 +247,6 @@
   .relative {
     position: relative;
   }
-  .relative\! {
-    position: relative !important;
-  }
   .static {
     position: static;
   }
@@ -338,24 +337,6 @@
       max-width: 96rem;
     }
   }
-  .container\! {
-    width: 100% !important;
-    @media (width >= 40rem) {
-      max-width: 40rem !important;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem !important;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem !important;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem !important;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem !important;
-    }
-  }
   .m-1 {
     margin: calc(var(--spacing) * 1);
   }
@@ -371,6 +352,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-96 {
+    margin-top: calc(var(--spacing) * 96);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -382,6 +366,9 @@
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-96 {
+    margin-bottom: calc(var(--spacing) * 96);
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
@@ -407,14 +394,8 @@
   .block {
     display: block;
   }
-  .block\! {
-    display: block !important;
-  }
   .contents {
     display: contents;
-  }
-  .contents\! {
-    display: contents !important;
   }
   .flex {
     display: flex;
@@ -757,23 +738,8 @@
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-  .grid-cols-\[1fr_1fr\] {
-    grid-template-columns: 1fr 1fr;
-  }
-  .grid-cols-\[1fr_2fr\] {
-    grid-template-columns: 1fr 2fr;
-  }
-  .grid-cols-\[1fr_2fr_3fr\] {
-    grid-template-columns: 1fr 2fr 3fr;
-  }
   .grid-cols-\[1fr_auto\] {
     grid-template-columns: 1fr auto;
-  }
-  .grid-cols-\[minmax\(0\,300px\)\] {
-    grid-template-columns: minmax(0,300px);
-  }
-  .grid-cols-\[minmax\(300px_1fr\)\] {
-    grid-template-columns: minmax(300px 1fr);
   }
   .flex-col {
     flex-direction: column;
@@ -1269,9 +1235,6 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-black\/50 {
-    background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
-  }
   .bg-blue-200 {
     background-color: var(--color-blue-200);
   }
@@ -1299,6 +1262,12 @@
   .bg-orange-200 {
     background-color: var(--color-orange-200);
   }
+  .bg-purple-200 {
+    background-color: var(--color-purple-200);
+  }
+  .bg-purple-300 {
+    background-color: var(--color-purple-300);
+  }
   .bg-red-100 {
     background-color: var(--color-red-100);
   }
@@ -1316,9 +1285,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-white\/50 {
-    background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
   }
   .bg-yellow-200 {
     background-color: var(--color-yellow-200);
@@ -1437,6 +1403,9 @@
   }
   .pe-48 {
     padding-inline-end: calc(var(--spacing) * 48);
+  }
+  .pt-96 {
+    padding-top: calc(var(--spacing) * 96);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -1966,24 +1935,21 @@
       padding: calc(var(--spacing) * 2);
     }
   }
-  .\*\:p-4 {
-    :is(& > *) {
-      padding: calc(var(--spacing) * 4);
-    }
-  }
   .\*\:text-center {
     :is(& > *) {
       text-align: center;
     }
   }
-  .dark\:bg-black {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-black);
-    }
-  }
-  .dark\:text-white {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-white);
+  .focus\:not-sr-only {
+    &:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
     }
   }
 }
