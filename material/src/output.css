@@ -63,6 +63,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --breakpoint-sm: 40rem;
     --container-3xl: 48rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -88,6 +89,7 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
     --leading-loose: 2;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -327,6 +329,9 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .mb-96 {
     margin-bottom: calc(var(--spacing) * 96);
   }
@@ -383,6 +388,9 @@
   .h-\[50px\] {
     height: 50px;
   }
+  .h-\[2000px\] {
+    height: 2000px;
+  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
@@ -400,6 +408,9 @@
   }
   .max-w-64 {
     max-width: calc(var(--spacing) * 64);
+  }
+  .max-w-screen-sm {
+    max-width: var(--breakpoint-sm);
   }
   .flex-auto {
     flex: auto;
@@ -647,14 +658,38 @@
   .bg-yellow-200 {
     background-color: var(--color-yellow-200);
   }
+  .bg-\[url\(\'\.\/img\/floresta\.jpg\'\)\] {
+    background-image: url('./img/floresta.jpg');
+  }
   .bg-\[url\(\'\.\/img\/grid\.svg\'\)\] {
     background-image: url('./img/grid.svg');
+  }
+  .bg-\[url\(\'\.\/img\/padrao\.svg\'\)\] {
+    background-image: url('./img/padrao.svg');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  .bg-clip-text {
+    background-clip: text;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
   }
   .p-16 {
     padding: calc(var(--spacing) * 16);
@@ -670,6 +705,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .pt-60 {
+    padding-top: calc(var(--spacing) * 60);
   }
   .pt-96 {
     padding-top: calc(var(--spacing) * 96);
@@ -737,6 +775,10 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-4xl\/tight {
+    font-size: var(--text-4xl);
+    line-height: var(--leading-tight);
   }
   .text-lg\/loose {
     font-size: var(--text-lg);
@@ -816,6 +858,9 @@
   .text-sky-800 {
     color: var(--color-sky-800);
   }
+  .text-transparent {
+    color: transparent;
+  }
   .text-violet-800 {
     color: var(--color-violet-800);
   }
@@ -854,6 +899,9 @@
   }
   .decoration-2 {
     text-decoration-thickness: 2px;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
   }
   .underline-offset-8 {
     text-underline-offset: 8px;
