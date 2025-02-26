@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Material - Tailwind CSS</title>
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="m-8">
+    <div class="flex flex-col gap-4 *:self-start">
+      <button
+        class="bg-green-200 text-green-800 py-2 px-4 rounded-md flex items-center gap-2"
+      >
+        COMPRAR
+        <span
+          class="block size-4 rounded-full border-4 border-green-600 border-r-transparent animate-spin"
+        ></span>
+      </button>
+
+      <button
+        class="bg-green-200 text-green-800 py-2 px-4 rounded-md flex items-center gap-2"
+      >
+        COMPRAR
+        <span
+          class="block size-4 rounded-full border-4 border-green-600 animate-pulse"
+        ></span>
+      </button>
+
+      <button
+        class="bg-green-200 text-green-800 py-2 px-4 rounded-md flex items-center gap-2"
+      >
+        COMPRAR
+        <span
+          class="block size-4 rounded-full border-4 border-green-600 animate-bounce"
+        ></span>
+      </button>
+
+      <button class="bg-blue-200 text-blue-600 py-2 px-4 rounded-md relative">
+        Mensagens
+        <span
+          class="absolute size-3 bg-purple-600 rounded-full -top-0.5 -right-0.5"
+        >
+          <span
+            class="size-3 absolute inset-0 bg-purple-600 rounded-full animate-ping"
+          ></span>
+        </span>
+      </button>
+    </div>
+  </body>
+</html>
