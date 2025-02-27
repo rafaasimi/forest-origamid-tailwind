@@ -1,1 +1,32 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --color-verde-200: #acef75;
+  --color-verde-300: #91ee77;
+  --color-verde-900: #16281f;
+  --color-verde-950: #0f1c15;
+
+  --color-green-300: #91ee77;
+
+  --font-sans: "DM Sans", system-ui;
+  --font-serif: "DM Serif Text", Georgia;
+
+  --spacing-22: 22rem;
+
+  text-xl: 1.25rem;
+  text-xl--line-height: 1.25rem;
+
+  text-2xs: .5rem;
+
+
+  @keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px) ;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) ;
+    }
+  }
+}
