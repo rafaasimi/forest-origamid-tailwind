@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+/* @theme {
   --color-verde-200: #acef75;
   --color-verde-300: #91ee77;
   --color-verde-900: #16281f;
@@ -13,10 +13,10 @@
 
   --spacing-22: 22rem;
 
-  text-xl: 1.25rem;
-  text-xl--line-height: 1.25rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.25rem;
 
-  text-2xs: .5rem;
+  --text-2xs: .5rem;
 
 
   @keyframes slideIn {
@@ -28,5 +28,11 @@
         opacity: 1;
         transform: translateX(0) ;
     }
+  }
+} */
+
+@layer componentes {
+  .btn {
+    @apply border-lime-400 border-2 bg-lime-200 px-4 py-2 text-lime-900 rounded-full hover:bg-lime-400 hover:text-lime-950;
   }
 }
