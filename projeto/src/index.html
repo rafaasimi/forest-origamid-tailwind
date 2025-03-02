@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -8,14 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forest</title>
 
-    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
   </head>
-  <body></body>
+  <body class="bg-verde-800 font-sans">
+    <div class="container mt-4 flex justify-center md:justify-start">
+      <div class="bg-verde-900 inline-flex items-center rounded-md">
+        <span class="bg-verde-300 block size-2 rounded-full relative -left-1"></span>
+        <div
+          class="text-verde-300 divide-verde-800 flex divide-x-2 *:px-4 *:py-2"
+        >
+          <div class="capitalize" id="dia">segunda</div>
+          <div id="temperatura">25°</div>
+          <div id="tempo">🌤️</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
