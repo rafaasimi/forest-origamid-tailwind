@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="bg-verde-800 font-sans">
+  <body class="bg-verde-800 mb-96 font-sans">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="bg-verde-900 inline-flex items-center rounded-md">
         <span
@@ -67,5 +67,58 @@
         </ul>
       </nav>
     </header>
+
+    <main class="container">
+      <div
+        class="from-verde-950/80 relative overflow-hidden rounded-2xl bg-gradient-to-t px-8 pt-64 pb-8 text-white max-sm:px-4 max-sm:pt-12"
+      >
+        <img
+          class="absolute inset-0 -z-10 size-full object-cover"
+          src="./img/floresta.jpg"
+          alt=""
+        />
+
+        <div
+          class="bg-verde-950/60 sm:bg-verde-950 mb-8 flex flex-col items-start gap-2 rounded-xl p-4 sm:inline-flex sm:flex-row sm:items-center sm:gap-8 sm:rounded-full sm:py-1 sm:pr-1 sm:pl-4"
+        >
+          vagas para dezembro abertas
+          <a
+            class="bg-verde-400 text-verde-900 inline-block rounded-full px-4 py-2"
+            href="/"
+            >Reserve hoje</a
+          >
+        </div>
+
+        <h1
+          class="mb-8 sm:mb-20 max-w-screen-sm font-serif text-4xl sm:text-5xl text-balance capitalize"
+        >
+          Venha experimentar a vida na Floresta
+        </h1>
+
+        <div class="sm:flex items-end justify-between text-sm">
+          <p class="max-sm:mb-4">
+            Melhores locais para visitar
+            <a
+              class="underline decoration-2 underline-offset-4 hover:no-underline"
+              href="/"
+              >2025</a
+            >
+          </p>
+
+          <div>
+            <p class="mb-2 uppercase">Recomendado por</p>
+            <p class="flex items-center gap-4">
+              <img
+                class="w-28"
+                src="./img/parceiros/wildbeast.svg"
+                alt="Wildbeast"
+              />
+              <span>|</span>
+              Revista Nacional
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
