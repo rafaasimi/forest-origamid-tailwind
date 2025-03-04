@@ -90,12 +90,12 @@
         </div>
 
         <h1
-          class="mb-8 sm:mb-20 max-w-screen-sm font-serif text-4xl sm:text-5xl text-balance capitalize"
+          class="mb-8 max-w-screen-sm font-serif text-4xl text-balance capitalize sm:mb-20 sm:text-5xl"
         >
           Venha experimentar a vida na Floresta
         </h1>
 
-        <div class="sm:flex items-end justify-between text-sm">
+        <div class="items-end justify-between text-sm sm:flex">
           <p class="max-sm:mb-4">
             Melhores locais para visitar
             <a
@@ -120,5 +120,79 @@
         </div>
       </div>
     </main>
+
+    <!-- Acomodações -->
+    <section
+      id="acomodacoes"
+      class="container mb-12 grid gap-8 pt-16 sm:mb-16 lg:grid-cols-[2fr_3fr]"
+    >
+      <div
+        class="content-end bg-[url('./img/padrao.svg')] bg-contain bg-left-bottom bg-no-repeat"
+      >
+        <h2 class="mb-8 font-serif text-4xl text-white lg:text-5xl">
+          Refúgio Natural
+        </h2>
+        <ul
+          class="grid gap-4 text-gray-200 *:flex *:items-center *:gap-4 sm:text-xl"
+        >
+          <li>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span>Experimente
+            a natureza de perto
+          </li>
+          <li>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span>Conecte-se
+            com a natureza
+          </li>
+          <li>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span
+            >Desconecte-se do digital
+          </li>
+          <li>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span>Observe a
+            vida selvagem
+          </li>
+          <li>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span>Escolha a
+            sua cabine preferida
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+        <div class="col-span-full grid *:col-start-1 *:row-start-1">
+          <img
+            class="h-52 w-full rounded-xl object-cover"
+            src="./img/casa1.jpg"
+            alt="Casa Ruby"
+          />
+          <span
+            class="bg-verde-950/60 m-2 self-start justify-self-end rounded-full px-4 py-2 text-sm/none text-white uppercase"
+            >Ruby</span
+          >
+        </div>
+        <div class="grid *:col-start-1 *:row-start-1">
+          <img
+            class="size-full rounded-xl object-cover"
+            src="./img/casa2.jpg"
+            alt="Casa Emerald"
+          />
+          <span
+            class="bg-verde-950/60 m-2 self-start justify-self-end rounded-full px-4 py-2 text-sm/none text-white uppercase"
+            >Emerald</span
+          >
+        </div>
+        <div class="grid *:col-start-1 *:row-start-1">
+          <img
+            class="size-full rounded-xl object-cover"
+            src="./img/casa3.jpg"
+            alt="Casa Saphire"
+          />
+          <span
+            class="bg-verde-950/60 m-2 self-start justify-self-end rounded-full px-4 py-2 text-sm/none text-white uppercase"
+            >Saphire</span
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>
