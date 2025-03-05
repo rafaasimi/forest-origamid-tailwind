@@ -366,7 +366,9 @@
       </div>
     </section>
 
+    <!-- Ciclo Natural -->
     <section
+      id="ciclo-natural"
       class="container mb-12 bg-[url('./img/padrao.svg')] bg-contain bg-center bg-no-repeat sm:mb-16 sm:py-16"
     >
       <p
@@ -381,7 +383,9 @@
       </h2>
 
       <div class="flex flex-col gap-4 sm:flex-row sm:gap-8">
-        <div class="bg-verde-900 grid flex-1 gap-4 rounded-xl p-6 sm:p-8 sm:hover:-translate-y-2 transition-transform">
+        <div
+          class="bg-verde-900 grid flex-1 gap-4 rounded-xl p-6 transition-transform sm:p-8 sm:hover:-translate-y-2"
+        >
           <div
             class="bg-verde-400 flex size-10 items-center justify-center rounded-full"
           >
@@ -395,7 +399,9 @@
           <span class="text-verde-300">05:40 - 07:00</span>
         </div>
 
-        <div class="bg-verde-900 grid flex-1 gap-4 rounded-xl p-6 sm:p-8 sm:translate-y-12 sm:hover:translate-y-10 transition-transform">
+        <div
+          class="bg-verde-900 grid flex-1 gap-4 rounded-xl p-6 transition-transform sm:translate-y-12 sm:p-8 sm:hover:translate-y-10"
+        >
           <div
             class="bg-verde-400 flex size-10 items-center justify-center rounded-full"
           >
@@ -409,7 +415,9 @@
           <span class="text-verde-300">12:00 - 14:00</span>
         </div>
 
-        <div class="bg-verde-900 grid flex-1 gap-4 rounded-xl p-6 sm:p-8 sm:hover:-translate-y-2 transition-transform">
+        <div
+          class="bg-verde-900 grid flex-1 gap-4 rounded-xl p-6 transition-transform sm:p-8 sm:hover:-translate-y-2"
+        >
           <div
             class="bg-verde-400 flex size-10 items-center justify-center rounded-full"
           >
@@ -422,6 +430,94 @@
           <span class="text-verde-300">19:00 - 21:00</span>
         </div>
       </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container mb-12 grid gap-8 sm:mb-16 lg:grid-cols-2">
+      <div>
+        <h1 class="text-verde-300 mb-4 font-serif text-4xl">Nosso Contatos</h1>
+        <p class="mb-8 text-balance text-gray-200">
+          Tem interesse em passar uma temporada na Forest? Entre em contato com
+          a gente por telefone ou email.
+        </p>
+
+        <div class="grid gap-4">
+          <div>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span>
+            <h2 class="text-verde-300 mb-2 font-serif text-2xl">Base</h2>
+            <p class="text-gray-300">
+              Rua da Mata, 123 - Floresta Nacional - RJ
+            </p>
+          </div>
+
+          <div>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span>
+            <h2 class="text-verde-300 mb-2 font-serif text-2xl">E-mail</h2>
+            <p class="text-gray-300">contato@forest.com</p>
+          </div>
+
+          <div>
+            <span class="bg-verde-400 inline-block h-0.5 w-6"></span>
+            <h2 class="text-verde-300 mb-2 font-serif text-2xl">Telefone</h2>
+            <p class="text-gray-300">21 99999-9999</p>
+          </div>
+        </div>
+      </div>
+
+      <form
+        class="bg-verde-900 grid gap-4 rounded-xl p-4 shadow-2xl lg:p-8"
+        action=""
+      >
+        <div class="grid gap-1">
+          <label class="text-white" for="nome">Nome</label>
+          <input
+            class="border-verde-800 bg-verde-800 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 rounded-md border-2 p-2 text-white focus:ring-2 focus:outline-none"
+            id="nome"
+            name="nome"
+            type="text"
+          />
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="grid gap-1">
+            <label class="text-white" for="email">E-mail</label>
+            <input
+              class="border-verde-800 bg-verde-800 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 rounded-md border-2 p-2 text-white focus:ring-2 focus:outline-none"
+              id="email"
+              name="email"
+              type="email"
+            />
+          </div>
+
+          <div class="grid gap-1">
+            <label class="text-white" for="telefone">Telefone</label>
+            <input
+              class="border-verde-800 bg-verde-800 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 rounded-md border-2 p-2 text-white focus:ring-2 focus:outline-none"
+              id="telefone"
+              name="telefone"
+              type=""
+              placeholder="(19) 99999-9999"
+            />
+          </div>
+        </div>
+
+        <div class="grid gap-1">
+          <label class="text-white" for="mensagem">Mensagem</label>
+          <textarea
+            rows="5"
+            class="border-verde-800 bg-verde-800 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 resize-none rounded-md border-2 p-2 text-white focus:ring-2 focus:outline-none"
+            id="mensagem"
+            name="mensagem"
+            type="text"
+          ></textarea>
+        </div>
+
+        <button
+          class="bg-verde-400 text-verde-900 inline-block rounded-full px-4 py-2 place-self-start"
+        >
+          Enviar E-mail
+        </button>
+      </form>
     </section>
   </body>
 </html>
