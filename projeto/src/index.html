@@ -43,32 +43,34 @@
         id="mobile-menu"
         class="z-40 hidden items-center max-lg:fixed max-lg:inset-0 max-lg:w-full lg:block"
       >
-        <div class="bg-verde-950/40 fixed inset-0 backdrop-blur-md lg:hidden"></div>
+        <div
+          class="bg-verde-950/40 fixed inset-0 backdrop-blur-md lg:hidden"
+        ></div>
         <ul
           class="text-2xl text-white max-lg:absolute max-lg:z-50 max-lg:w-full max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 lg:flex lg:flex-wrap lg:gap-8 lg:text-xl"
         >
-          <li>
+          <li class="animate-slide-in opacity-0 animate-1">
             <a
               class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
               href="#acomodacoes"
               >Acomodações</a
             >
           </li>
-          <li>
+          <li class="animate-slide-in opacity-0 animate-2">
             <a
               class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
               href="#eventos"
               >Eventos</a
             >
           </li>
-          <li>
+          <li class="animate-slide-in opacity-0 animate-3">
             <a
               class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
               href="#experiencias"
               >Experiências</a
             >
           </li>
-          <li>
+          <li class="animate-slide-in opacity-0 animate-4">
             <a
               class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
               href="#contato"
@@ -603,17 +605,17 @@
     </footer>
 
     <script>
-      const mobileButton = document.getElementById('mobile-button');
-      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileButton = document.getElementById("mobile-button");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-      mobileButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
+      mobileButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
       });
 
-      mobileMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.remove('flex');
+      mobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
       });
     </script>
   </body>
