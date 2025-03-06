@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,34 +39,58 @@
         <img src="./img/forest.svg" alt="Forest" />
       </a>
 
-      <nav>
-        <ul class="flex flex-wrap gap-8 text-xl text-white">
+      <nav
+        id="mobile-menu"
+        class="z-40 hidden items-center max-lg:fixed max-lg:inset-0 max-lg:w-full lg:block"
+      >
+        <div class="bg-verde-950/40 fixed inset-0 backdrop-blur-md lg:hidden"></div>
+        <ul
+          class="text-2xl text-white max-lg:absolute max-lg:z-50 max-lg:w-full max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 lg:flex lg:flex-wrap lg:gap-8 lg:text-xl"
+        >
           <li>
             <a
-              class="hover:underline hover:underline-offset-8"
+              class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
               href="#acomodacoes"
               >Acomodações</a
             >
           </li>
           <li>
-            <a class="hover:underline hover:underline-offset-8" href="#eventos"
+            <a
+              class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
+              href="#eventos"
               >Eventos</a
             >
           </li>
           <li>
             <a
-              class="hover:underline hover:underline-offset-8"
+              class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
               href="#experiencias"
               >Experiências</a
             >
           </li>
           <li>
-            <a class="hover:underline hover:underline-offset-8" href="#contato"
+            <a
+              class="block p-4 max-lg:hover:bg-white/10 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8"
+              href="#contato"
               >Contato</a
             >
           </li>
         </ul>
       </nav>
+
+      <button
+        id="mobile-button"
+        class="bg-verde-400 text-verde-900 flex items-center gap-3 rounded-full px-4 py-2 lg:hidden"
+      >
+        Menu
+        <span
+          class="*:bg-verde-800 flex h-3 w-4 flex-col justify-between *:h-0.5 *:rounded-md"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
     </header>
 
     <!-- Main -->
@@ -538,7 +562,9 @@
 
     <!-- Footer -->
     <footer class="container pb-8">
-      <div class="bg-verde-900 mb-8 rounded-2xl p-6 sm:p-12 grid gap-8 lg:grid-cols-2">
+      <div
+        class="bg-verde-900 mb-8 grid gap-8 rounded-2xl p-6 sm:p-12 lg:grid-cols-2"
+      >
         <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
           <div>
             <h3 class="mb-4 font-serif text-xl text-white">Endereço</h3>
@@ -558,7 +584,7 @@
         </div>
 
         <div class="lg:justify-self-end">
-          <img class="mb-4" src="./img/forest.svg" alt="Forest">
+          <img class="mb-4" src="./img/forest.svg" alt="Forest" />
           <p class="text-gray-400">Conecte-se com a natureza</p>
         </div>
       </div>
@@ -575,5 +601,20 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      const mobileButton = document.getElementById('mobile-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+      });
+
+      mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
+    </script>
   </body>
 </html>
