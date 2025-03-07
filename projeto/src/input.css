@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "DM Serif Text", Georgia, serif;
+
   --color-verde-200: #acef75;
   --color-verde-300: #91ee77;
   --color-verde-400: #17e880;
